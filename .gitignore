@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+
+backend/app/data/*.db
+backend/runtime/*
+!backend/runtime/logs/
+backend/runtime/logs/*
+
+dist/
+build/

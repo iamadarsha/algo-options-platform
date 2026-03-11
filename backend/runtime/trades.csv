@@ -1,2 +1,0 @@
-timestamp,instrument,side,qty,entry_price,exit_price,pl,sl,tp,reason
-2026-03-10T10:25:00,NIFTYWK22200CE,BUY,1,35.47,45.4,704.75,28.79,45.49,take_profit

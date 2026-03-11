@@ -1,0 +1,11 @@
+beautifulsoup4>=4.12.3
+fastapi>=0.115.0
+numpy>=2.2.0
+pandas>=2.2.0
+pydantic>=2.10.0
+PyYAML>=6.0.2
+requests>=2.32.0
+uvicorn>=0.34.0
+backtrader>=1.9.78.123
+vaderSentiment>=3.3.2
+pytest>=8.3.0

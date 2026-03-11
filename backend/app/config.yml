@@ -1,0 +1,46 @@
+capital: 20000
+daily_loss_limit: 1000
+per_trade_loss_limit: 500
+max_exposure_pct: 0.9
+default_strategy: momentum
+square_off_time: "15:14"
+market_close_time: "15:29"
+timezone: Asia/Kolkata
+database_url: sqlite:///./backend/app/data/algo_platform.db
+disable_live_trading: true
+paper_trading: true
+universe:
+  - NIFTY
+  - BANKNIFTY
+  - RELIANCE
+  - HDFCBANK
+  - ICICIBANK
+upstox:
+  api_key: ${UPSTOX_API_KEY}
+  api_secret: ${UPSTOX_API_SECRET}
+  access_token: ${UPSTOX_ACCESS_TOKEN}
+backtest:
+  slippage_pct: 0.2
+  commission_per_order: 20
+  bar_size: 5m
+strategy_params:
+  momentum:
+    ema_fast: 20
+    ema_slow: 50
+    rsi_period: 14
+    rsi_long: 58
+    rsi_short: 42
+    volume_window: 20
+    volume_spike_mult: 1.4
+    breakout_lookback: 12
+  opening_range_fade:
+    opening_range_minutes: 15
+    style: fade
+    rsi_period: 14
+    rsi_oversold: 35
+    rsi_overbought: 65
+  mean_reversion:
+    rsi_period: 14
+    rsi_oversold: 30
+    rsi_overbought: 70
+    vwap_band_pct: 0.003

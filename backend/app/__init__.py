@@ -1,0 +1,1 @@
+"""Algo Platform backend package."""

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: algo-platform
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: algo-platform
+  template:
+    metadata:
+      labels:
+        app: algo-platform
+    spec:
+      containers:
+        - name: backend
+          image: ghcr.io/example/algo-platform:latest
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - secretRef:
+                name: algo-platform-secrets
+          volumeMounts:
+            - name: runtime
+              mountPath: /app/backend/runtime
+      volumes:
+        - name: runtime
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: algo-platform
+spec:
+  selector:
+    app: algo-platform
+  ports:
+    - port: 80
+      targetPort: 8000

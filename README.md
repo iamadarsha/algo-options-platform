@@ -1,4 +1,28 @@
-# Algo Platform
+<div align="center">
+
+# Algo Options Platform
+
+### Paper-first intraday options research and execution infrastructure for Indian markets
+
+[![Python](https://img.shields.io/badge/Python-FastAPI-3776ab?style=for-the-badge&logo=python&logoColor=fff)](#tech-stack)
+[![React](https://img.shields.io/badge/React-Dashboard-61dafb?style=for-the-badge&logo=react&logoColor=111)](#tech-stack)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ed?style=for-the-badge&logo=docker&logoColor=fff)](#quick-start)
+[![Safety](https://img.shields.io/badge/Default-Paper_Trading-22c55e?style=for-the-badge)](#safety)
+
+</div>
+
+---
+
+## Recruiter Quick Scan
+
+| Signal | Details |
+|---|---|
+| Product | Intraday options strategy platform with paper trading, backtesting, risk controls, and guarded live execution |
+| What it demonstrates | Financial systems thinking, risk-aware engineering, simulation, API integration, and backend/frontend architecture |
+| Differentiator | Live trading is intentionally gated behind explicit safety flags |
+| Stack | Python, FastAPI, SQLite, React, Docker, Upstox API, vectorized backtesting |
+
+---
 
 Intraday options trading platform for Indian markets with a safe paper-trading default, guarded Upstox live execution, SQLite persistence, vectorized backtesting, morning reports, and a React dashboard.
 
